@@ -10,4 +10,11 @@
     <string name="user_mail">Correo</string>
     <string name="user_country">Pais</string>
     <string name="user_city">Ciudad</string>
+    <string name="user_gender_woman">Mujer</string>
+    <string name="user_gender_man">Hombre</string>
+    <string name="change">Cambiar</string>
+    <string name="next">Sigiente</string>
+    <string name="personal_information">Información Personal</string>
+    <string name="Contact_information">Información de contacto</string>
+
 </resources>
