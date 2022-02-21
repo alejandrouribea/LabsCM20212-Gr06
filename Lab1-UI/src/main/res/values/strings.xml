@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">LabsCM20212-Gr06</string>
+    <string name="user_name">Nombre</string>
+    <string name="user_last_names">Apellidos</string>
+    <string name="user_gender">Sexo</string>
+    <string name="user_date_of_birth">Fecha de Nacimiento </string>
+    <string name="user_level_of_education">Grado de escolaridad</string>
+    <string name="user_phone_number">Teléfono</string>
+    <string name="user_address">Dirección</string>
+    <string name="user_mail">Correo</string>
+    <string name="user_country">Pais</string>
+    <string name="user_city">Ciudad</string>
 </resources>

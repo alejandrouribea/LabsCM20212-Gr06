@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LabsCM20212-Gr06</string>
+    <string name="user_name">Name</string>
+    <string name="user_last_names">Last name</string>
+    <string name="user_gender">Sex</string>
+    <string name="user_date_of_birth">Date of birth</string>
+    <string name="user_level_of_education">level of education</string>
+    <string name="user_phone_number">Phone number</string>
+    <string name="user_address">Address</string>
+    <string name="user_mail">Mail</string>
+    <string name="user_country">Country</string>
+    <string name="user_city">City</string>
+</resources>
