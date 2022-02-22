@@ -3,12 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/aleja/AndroidStudioProjects/LabsCM20212-Gr06/Lab1-UI/src/main/res/layout-land/activity_contact_data.xml" value="0.33" />
-        <entry key="..\:/Users/aleja/AndroidStudioProjects/LabsCM20212-Gr06/Lab1-UI/src/main/res/layout-land/activity_personal_data.xml" value="0.17760416666666667" />
-        <entry key="..\:/Users/aleja/AndroidStudioProjects/LabsCM20212-Gr06/Lab1-UI/src/main/res/layout/activity_contact_data.xml" value="0.12" />
-        <entry key="..\:/Users/aleja/AndroidStudioProjects/LabsCM20212-Gr06/Lab1-UI/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/aleja/AndroidStudioProjects/LabsCM20212-Gr06/Lab1-UI/src/main/res/layout/activity_personal_data.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ediso/AndroidStudioProjects/LabsCM20212-Gr06/Lab1-UI/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1785" />
+        <entry key="..\:/Users/ediso/AndroidStudioProjects/LabsCM20212-Gr06/Lab1-UI/src/main/res/drawable/ic_baseline_local_phone_24.xml" value="0.1785" />
+        <entry key="..\:/Users/ediso/AndroidStudioProjects/LabsCM20212-Gr06/Lab1-UI/src/main/res/drawable/ic_launcher_background.xml" value="0.1785" />
+        <entry key="..\:/Users/ediso/AndroidStudioProjects/LabsCM20212-Gr06/Lab1-UI/src/main/res/layout-land/activity_personal_data.xml" value="0.25" />
+        <entry key="..\:/Users/ediso/AndroidStudioProjects/LabsCM20212-Gr06/Lab1-UI/src/main/res/layout/activity_contact_data.xml" value="0.25" />
         <entry key="..\:/Users/ediso/AndroidStudioProjects/LabsCM20212-Gr06/Lab1-UI/src/main/res/layout/activity_main.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/ediso/AndroidStudioProjects/LabsCM20212-Gr06/Lab1-UI/src/main/res/layout/activity_personal_data.xml" value="0.33" />
       </map>
     </option>
   </component>
@@ -21,7 +22,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.12" />
+        <option name="scale" value="0.33" />
       </ProjectState>
     </option>
   </component>
