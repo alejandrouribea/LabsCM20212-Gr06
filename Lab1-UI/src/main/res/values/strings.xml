@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">LabsCM20212-Gr06</string>
-    <string name="user_name">Nombre</string>
+    <string name="user_name">Nombres</string>
     <string name="user_last_names">Apellidos</string>
     <string name="user_gender">Sexo</string>
     <string name="user_date_of_birth">Fecha de Nacimiento</string>
@@ -14,7 +14,7 @@
     <string name="user_gender_woman">Mujer</string>
     <string name="user_gender_man">Hombre</string>
     <string name="change">Cambiar</string>
-    <string name="next">Sigiente</string>
+    <string name="next">Siguiente</string>
     <string name="personal_information">Información Personal</string>
     <string name="Contact_information">Información de contacto</string>
     <string-array name="user_array_level_of_education">

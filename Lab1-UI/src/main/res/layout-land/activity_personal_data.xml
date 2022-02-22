@@ -15,13 +15,13 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/user_name"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextPersonName2"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/contactAddress"
+        app:layout_constraintEnd_toStartOf="@+id/contactAddress"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/contactAddress"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -47,7 +47,7 @@
         android:layout_marginRight="16dp"
         android:contentDescription="@string/user_level_of_education"
         android:entries="@array/user_array_level_of_education"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/contactButtonNext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +76,7 @@
         android:layout_marginRight="180dp"
         android:text="@string/user_gender_woman"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/contactAddress" />
 
     <RadioButton
         android:id="@+id/radioButton"
@@ -156,7 +156,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/contactButtonNext"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginStart="50dp"
