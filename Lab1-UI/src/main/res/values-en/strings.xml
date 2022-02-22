@@ -17,4 +17,11 @@
     <string name="next">Next</string>
     <string name="personal_information">Personal Information </string>
     <string name="Contact_information">Contact Information </string>
+    <string-array name="user_array_level_of_education">
+        <item>Select</item>
+        <item>Primary</item>
+        <item>Secondary</item>
+        <item>University</item>
+        <item>Other</item>
+    </string-array>
 </resources>
