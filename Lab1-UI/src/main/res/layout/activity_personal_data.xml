@@ -67,18 +67,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioButton
-        android:id="@+id/radioButton2"
+        android:id="@+id/radioButtonF"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/user_gender_woman"
-        app:layout_constraintBaseline_toBaselineOf="@+id/radioButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/radioButtonM"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintStart_toEndOf="@+id/radioButton" />
+        app:layout_constraintStart_toEndOf="@+id/radioButtonM" />
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/radioButtonM"
         android:layout_width="98dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -87,7 +87,7 @@
         android:layout_marginRight="16dp"
         android:text="@string/user_gender_man"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
+        app:layout_constraintEnd_toStartOf="@+id/radioButtonF"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView3" />
 
@@ -109,9 +109,10 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="44dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></LinearLayout>
 
@@ -140,7 +141,7 @@
         android:layout_marginRight="16dp"
         android:text="@string/user_gender"
         app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton"
+        app:layout_constraintEnd_toStartOf="@+id/radioButtonM"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 

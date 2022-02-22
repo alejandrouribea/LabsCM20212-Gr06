@@ -73,7 +73,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioButton
-        android:id="@+id/radioButton2"
+        android:id="@+id/radioButtonF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -81,14 +81,14 @@
         android:layout_marginEnd="180dp"
         android:layout_marginRight="180dp"
         android:text="@string/user_gender_woman"
-        app:layout_constraintBottom_toBottomOf="@+id/radioButton"
+        app:layout_constraintBottom_toBottomOf="@+id/radioButtonM"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/radioButton"
-        app:layout_constraintTop_toTopOf="@+id/radioButton" />
+        app:layout_constraintStart_toEndOf="@+id/radioButtonM"
+        app:layout_constraintTop_toTopOf="@+id/radioButtonM" />
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/radioButtonM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/user_gender_man"
