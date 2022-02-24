@@ -2,11 +2,10 @@ package co.edu.udea.compumovil.gr06_20212.lab1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.RadioButton
-import android.widget.Spinner
+import android.widget.*
 import androidx.core.view.get
+import androidx.core.view.isVisible
+import co.edu.udea.compumovil.gr06_20212.lab1.R.color.purple_700
 
 
 class PersonalDataActivity : AppCompatActivity() {
@@ -68,8 +67,21 @@ class PersonalDataActivity : AppCompatActivity() {
 
         if (personname.isEmpty() || personlastname.isEmpty() || personbirth.isEmpty()){
             println("error no lleno los  campos")
+
+            (findViewById<EditText>(R.id.textNameError)).isVisible = personname.isEmpty()
+
+            (findViewById<EditText>(R.id.textLastNameError)).isVisible = personlastname.isEmpty()
+
+            (findViewById<EditText>(R.id.textErroretDate)).isVisible = personbirth.isEmpty()
+
         }
         else{
+            (findViewById<EditText>(R.id.textNameError)).isVisible = false
+
+            (findViewById<EditText>(R.id.textLastNameError)).isVisible = false
+
+            (findViewById<EditText>(R.id.textErroretDate)).isVisible = false
+
             println(personname)
             println(personlastname)
             println(personsexo)

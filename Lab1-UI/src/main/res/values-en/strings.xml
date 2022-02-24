@@ -17,6 +17,7 @@
     <string name="next">Next</string>
     <string name="personal_information">Personal Information </string>
     <string name="Contact_information">Contact Information </string>
+    <string name="user_error_required">Error, this field is required</string>
     <string-array name="user_array_level_of_education">
         <item>Select</item>
         <item>Primary</item>

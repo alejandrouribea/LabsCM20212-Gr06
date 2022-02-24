@@ -17,6 +17,7 @@
     <string name="next">Siguiente</string>
     <string name="personal_information">Información Personal</string>
     <string name="Contact_information">Información de contacto</string>
+    <string name="user_error_required">Este campo es obligatorio</string>
     <string-array name="user_array_level_of_education">
         <item>Seleccione</item>
         <item>Primaria</item>
@@ -24,5 +25,6 @@
         <item>Univercitaria</item>
         <item>Otro</item>
     </string-array>
+
 
 </resources>
