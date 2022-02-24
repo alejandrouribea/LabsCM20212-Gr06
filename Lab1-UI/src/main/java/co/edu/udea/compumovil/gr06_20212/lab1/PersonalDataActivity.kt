@@ -43,34 +43,40 @@ class PersonalDataActivity : AppCompatActivity() {
             return findViewById<RadioButton>(R.id.radioButtonM).text.toString()
 
         }
-        else{
+        else if (findViewById<RadioButton>(R.id.radioButtonF).isChecked){
             return findViewById<RadioButton>(R.id.radioButtonF).text.toString()
         }
+        else{
+            return " "
+        }
+    }
+    private fun levelSpinnerOption():String{
+        if ((findViewById<Spinner>(R.id.SpinnerLevelEducation) as Spinner).selectedItemPosition==0){
+            return " "
+        }
+        else{
+            return (findViewById<Spinner>(R.id.SpinnerLevelEducation) as Spinner).selectedItem.toString()
+        }
+        return ""
     }
     private fun personValidation(){
         var personname=(findViewById<EditText>(R.id.editTextPersonName) as EditText).text.toString()
         var personlastname=(findViewById<EditText>(R.id.editTextPersonLastname) as EditText).text.toString()
         var personsexo=radioButtonCheckTrue()
         var personbirth=(findViewById<EditText>(R.id.etDate) as EditText).text.toString()
-        var personeducation=(findViewById<Spinner>(R.id.SpinnerLevelEducation) as Spinner).selectedItem
+        var personeducation=levelSpinnerOption()
 
-
-
-
-        println(personname)
-        println(personlastname)
-        println(personsexo)
-        println(personbirth)
-        println(personeducation)
-    }
-    private fun personValidationEmpty(string:String):Boolean{
-        if (string.isEmpty()){
-
+        if (personname.isEmpty() || personlastname.isEmpty() || personbirth.isEmpty()){
+            println("error no lleno los  campos")
         }
         else{
-
+            println(personname)
+            println(personlastname)
+            println(personsexo)
+            println(personbirth)
+            println(personeducation)
         }
-        return true
+
     }
 
 }
