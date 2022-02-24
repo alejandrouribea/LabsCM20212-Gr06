@@ -107,7 +107,7 @@
         app:srcCompat="@drawable/ic_baseline_location_city_24" />
 
     <EditText
-        android:id="@+id/contactAddress"
+        android:id="@+id/editTextPersonLastname"
         android:layout_width="214dp"
         android:layout_height="65dp"
         android:layout_marginStart="16dp"
@@ -131,15 +131,15 @@
         app:layout_constraintTop_toTopOf="@+id/imageView5" />
 
     <Button
-        android:id="@+id/contactButtonNext"
+        android:id="@+id/ButtonPersonNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="448dp"
         android:layout_marginLeft="448dp"
         android:text="@string/next"
-        app:layout_constraintBottom_toBottomOf="@+id/contactAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextPersonLastname"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/contactAddress"
+        app:layout_constraintTop_toTopOf="@+id/editTextPersonLastname"
         app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
