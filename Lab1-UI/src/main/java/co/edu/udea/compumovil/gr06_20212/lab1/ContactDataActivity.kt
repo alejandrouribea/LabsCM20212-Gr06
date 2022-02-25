@@ -2,6 +2,7 @@ package co.edu.udea.compumovil.gr06_20212.lab1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import androidx.core.view.isVisible
 
@@ -9,6 +10,11 @@ class ContactDataActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contact_data)
+        setTitle(R.string.Contact_information)
+
+        findViewById<Button>(R.id.ButtonContacNext).setOnClickListener(){
+            personValidation()
+        }
     }
 
     private fun contactValidation(){

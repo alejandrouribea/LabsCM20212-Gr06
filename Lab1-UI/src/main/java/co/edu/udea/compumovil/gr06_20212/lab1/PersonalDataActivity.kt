@@ -21,7 +21,7 @@ class PersonalDataActivity : AppCompatActivity() {
         findViewById<RadioButton>(R.id.radioButtonF).setOnClickListener(){
             findViewById<RadioButton>(R.id.radioButtonM).isChecked=false
         }
-        findViewById<Button>(R.id.ButtonPersonNext).setOnClickListener(){
+        findViewById<Button>(R.id.ButtonContacNext).setOnClickListener(){
             personValidation()
         }
 
@@ -54,7 +54,7 @@ class PersonalDataActivity : AppCompatActivity() {
         else{
             return (findViewById<Spinner>(R.id.SpinnerLevelEducation) as Spinner).selectedItem.toString()
         }
-        return ""
+        return " "
     }
     private fun personValidation(){
         var personname=(findViewById<EditText>(R.id.editTextPersonName) as EditText).text.toString()
@@ -64,20 +64,14 @@ class PersonalDataActivity : AppCompatActivity() {
         var personeducation=levelSpinnerOption()
 
         if (personname.isEmpty() || personlastname.isEmpty() || personbirth.isEmpty()){
-            println("error no lleno los  campos")
-
             (findViewById<EditText>(R.id.textNameError)).isVisible = personname.isEmpty()
-
             (findViewById<EditText>(R.id.textLastNameError)).isVisible = personlastname.isEmpty()
-
             (findViewById<EditText>(R.id.textErroretDate)).isVisible = personbirth.isEmpty()
-
         }
+
         else{
             (findViewById<EditText>(R.id.textNameError)).isVisible = false
-
             (findViewById<EditText>(R.id.textLastNameError)).isVisible = false
-
             (findViewById<EditText>(R.id.textErroretDate)).isVisible = false
 
             println(personname)
