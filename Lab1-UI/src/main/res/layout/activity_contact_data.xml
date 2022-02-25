@@ -6,6 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".ContactDataActivity">
 
+    <TextView
+        android:id="@+id/textmailError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="@string/user_error_required"
+        android:textColor="#FF0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/contactMail"
+        app:layout_constraintTop_toBottomOf="@+id/contactMail" />
+
+    <TextView
+        android:id="@+id/textCountryError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="@string/user_error_required"
+        android:textColor="#FF0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/contactCountry" />
+
+    <TextView
+        android:id="@+id/textPhoneError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="@string/user_error_required"
+        android:textColor="#FF0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/contactPhone"
+        app:layout_constraintTop_toBottomOf="@+id/contactPhone" />
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
