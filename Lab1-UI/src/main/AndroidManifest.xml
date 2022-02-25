@@ -11,10 +11,10 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.LabsCM20212Gr06">
         <activity
-            android:name=".PersonalDataActivity"
+            android:name=".ContactDataActivity"
             android:exported="false" />
         <activity
-            android:name=".ContactDataActivity"
+            android:name=".PersonalDataActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

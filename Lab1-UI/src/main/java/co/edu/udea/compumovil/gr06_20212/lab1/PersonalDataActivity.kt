@@ -1,5 +1,6 @@
 package co.edu.udea.compumovil.gr06_20212.lab1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
@@ -79,6 +80,9 @@ class PersonalDataActivity : AppCompatActivity() {
             println(personsexo)
             println(personbirth)
             println(personeducation)
+
+            val intent: Intent = Intent(this,ContactDataActivity::class.java)// preguntar al  profe  modificar para que sea como mostro el profe  en clase
+            startActivity(intent)//
         }
 
     }

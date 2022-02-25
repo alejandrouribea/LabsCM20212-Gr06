@@ -19,11 +19,12 @@ class ContactDataActivity : AppCompatActivity() {
 
     private fun contactValidation(){
         var contactPhone=(findViewById<EditText>(R.id.contactPhone) as EditText).text.toString()
-        var contactMail=(findViewById<EditText>(R.id.contactEmail) as EditText).text.toString()
+        var contactMail=(findViewById<EditText>(R.id.contactMail) as EditText).text.toString()
         var contactCountry=(findViewById<EditText>(R.id.contactCountry) as EditText).text.toString()
 
         if (contactPhone.isEmpty() || contactMail.isEmpty() || contactCountry.isEmpty()){
             println("error no lleno los  campos")
+
 
             (findViewById<EditText>(R.id.textPhoneError)).isVisible = contactPhone.isEmpty()
 
