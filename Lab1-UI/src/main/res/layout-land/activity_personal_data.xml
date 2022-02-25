@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
     <EditText
-        android:id="@+id/editTextPersonLastname"
+        android:id="@+id/contactEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

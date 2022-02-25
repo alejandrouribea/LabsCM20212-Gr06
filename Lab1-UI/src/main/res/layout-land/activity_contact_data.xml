@@ -23,21 +23,21 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="364dp"
-        android:layout_marginLeft="364dp"
+        android:layout_marginStart="360dp"
+        android:layout_marginLeft="360dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.648"
+        app:layout_constraintVertical_bias="0.6"
         app:srcCompat="@drawable/ic_baseline_email_24" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="144dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="128dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_mapmode" />
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
         app:srcCompat="@drawable/ic_baseline_place_24" />
@@ -98,18 +98,18 @@
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/contactCountry"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.422"
+        app:layout_constraintVertical_bias="0.352"
         app:srcCompat="@drawable/ic_baseline_location_city_24" />
 
     <EditText
-        android:id="@+id/editTextPersonLastname"
-        android:layout_width="214dp"
-        android:layout_height="65dp"
+        android:id="@+id/contactEmail"
+        android:layout_width="209dp"
+        android:layout_height="44dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:contentDescription="@string/user_address"
@@ -134,12 +134,41 @@
         android:id="@+id/ButtonPersonNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="448dp"
-        android:layout_marginLeft="448dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginLeft="520dp"
         android:text="@string/next"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextPersonLastname"
+        app:layout_constraintBottom_toBottomOf="@+id/contactEmail"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextPersonLastname"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/contactEmail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textPhoneError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_error_required"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="@+id/contactPhone"
+        app:layout_constraintTop_toBottomOf="@+id/contactPhone" />
+
+    <TextView
+        android:id="@+id/textCountryError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/user_error_required"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/contactCountry" />
+
+    <TextView
+        android:id="@+id/textmailError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_error_required"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="@+id/contactMail"
+        app:layout_constraintTop_toBottomOf="@+id/contactMail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

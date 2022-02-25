@@ -28,7 +28,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextPersonLastname"
+        android:id="@+id/contactEmail"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -244,7 +244,7 @@
         android:textColor="#AF0C0C"
         android:visibility="invisible"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPersonLastname" />
+        app:layout_constraintTop_toBottomOf="@+id/contactEmail" />
 
     <TextView
         android:id="@+id/textErroretDate"

@@ -3,9 +3,7 @@ package co.edu.udea.compumovil.gr06_20212.lab1
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
-import androidx.core.view.get
 import androidx.core.view.isVisible
-import co.edu.udea.compumovil.gr06_20212.lab1.R.color.purple_700
 
 
 class PersonalDataActivity : AppCompatActivity() {
@@ -60,7 +58,7 @@ class PersonalDataActivity : AppCompatActivity() {
     }
     private fun personValidation(){
         var personname=(findViewById<EditText>(R.id.editTextPersonName) as EditText).text.toString()
-        var personlastname=(findViewById<EditText>(R.id.editTextPersonLastname) as EditText).text.toString()
+        var personlastname=(findViewById<EditText>(R.id.contactEmail) as EditText).text.toString()
         var personsexo=radioButtonCheckTrue()
         var personbirth=(findViewById<EditText>(R.id.etDate) as EditText).text.toString()
         var personeducation=levelSpinnerOption()

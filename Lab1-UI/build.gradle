@@ -6,6 +6,11 @@ plugins {
 android {
     compileSdk 32
 
+    buildFeatures{
+        dataBinding = true
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId "co.edu.udea.compumovil.gr06_20212.lab1"
         minSdk 16
