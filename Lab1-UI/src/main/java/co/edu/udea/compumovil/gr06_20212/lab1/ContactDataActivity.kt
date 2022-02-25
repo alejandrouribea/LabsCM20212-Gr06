@@ -13,7 +13,7 @@ class ContactDataActivity : AppCompatActivity() {
         setTitle(R.string.Contact_information)
 
         findViewById<Button>(R.id.ButtonContacNext).setOnClickListener(){
-            personValidation()
+            contactValidation()
         }
     }
 
