@@ -11,7 +11,7 @@ class ContactDataActivity : AppCompatActivity() {
         setContentView(R.layout.activity_contact_data)
     }
 
-    private fun personValidation(){
+    private fun contactValidation(){
         var contactPhone=(findViewById<EditText>(R.id.contactPhone) as EditText).text.toString()
         var contactMail=(findViewById<EditText>(R.id.contactEmail) as EditText).text.toString()
         var contactCountry=(findViewById<EditText>(R.id.contactCountry) as EditText).text.toString()
