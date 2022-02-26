@@ -3,6 +3,7 @@ package co.edu.udea.compumovil.gr06_20212.lab1
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.*
 import androidx.core.view.isVisible
 
@@ -29,7 +30,7 @@ class PersonalDataActivity : AppCompatActivity() {
     }
 
     private fun showDatePikerDialog() {
-        val datePicker=DatePickerFragment({day,month,year-> onDateSelected(year,month, day)})
+        val datePicker=DatePickerFragment({day,month,year-> onDateSelected(year,month,day)})
         datePicker.show(supportFragmentManager,"datePiker")
     }
 
@@ -46,13 +47,13 @@ class PersonalDataActivity : AppCompatActivity() {
             return findViewById<RadioButton>(R.id.radioButtonF).text.toString()
         }
         else{
-            return " "
+            return ""
         }
     }
 
     private fun levelSpinnerOption():String{
         if ((findViewById<Spinner>(R.id.SpinnerLevelEducation) as Spinner).selectedItemPosition==0){
-            return " "
+            return ""
         }
         else{
             return (findViewById<Spinner>(R.id.SpinnerLevelEducation) as Spinner).selectedItem.toString()
@@ -77,11 +78,13 @@ class PersonalDataActivity : AppCompatActivity() {
             (findViewById<EditText>(R.id.textLastNameError)).isVisible = false
             (findViewById<EditText>(R.id.textErroretDate)).isVisible = false
 
-            println(personname)
+            Log.i("PersonData",personname+"\n"+personlastname+"\n"+personsexo+"\n"+personbirth+"\n"+personeducation)
+
+            /*println(personname)
             println(personlastname)
             println(personsexo)
             println(personbirth)
-            println(personeducation)
+            println(personeducation)*/
 
             val intent: Intent = Intent(this,ContactDataActivity::class.java)// preguntar al  profe  modificar para que sea como mostro el profe  en clase
             startActivity(intent)//
