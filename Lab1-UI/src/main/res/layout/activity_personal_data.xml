@@ -18,7 +18,8 @@
         android:layout_marginRight="16dp"
         android:ems="10"
         android:hint="@string/user_name"
-        android:inputType="textVisiblePassword|textNoSuggestions|textPersonName"
+        android:imeOptions="actionNext"
+        android:inputType="textNoSuggestions|textPersonName|textCapSentences"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,7 +28,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/contactEmail"
+        android:id="@+id/editTextPersonLastname"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -36,7 +37,7 @@
         android:layout_marginRight="16dp"
         android:ems="10"
         android:hint="@string/user_last_names"
-        android:inputType="textNoSuggestions|textPersonName"
+        android:inputType="textNoSuggestions|textPersonName|textCapSentences"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -243,7 +244,7 @@
         android:textColor="#AF0C0C"
         android:visibility="invisible"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/contactEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonLastname" />
 
     <TextView
         android:id="@+id/textErroretDate"

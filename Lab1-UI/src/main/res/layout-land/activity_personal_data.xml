@@ -16,7 +16,8 @@
         android:layout_marginRight="16dp"
         android:ems="10"
         android:hint="@string/user_name"
-        android:inputType="textPersonName"
+        android:imeOptions="actionNext"
+        android:inputType="textNoSuggestions|textPersonName|textCapSentences"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView11"
         app:layout_constraintEnd_toStartOf="@+id/imageView12"
@@ -24,7 +25,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
     <EditText
-        android:id="@+id/contactEmail"
+        android:id="@+id/editTextPersonLastname"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -33,7 +34,7 @@
         android:layout_marginRight="16dp"
         android:ems="10"
         android:hint="@string/user_last_names"
-        android:inputType="textPersonName"
+        android:inputType="textNoSuggestions|textPersonName|textCapSentences"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView12"
         app:layout_constraintEnd_toEndOf="parent"

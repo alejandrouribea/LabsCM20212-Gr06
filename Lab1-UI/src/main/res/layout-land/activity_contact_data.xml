@@ -104,7 +104,7 @@
         app:srcCompat="@drawable/ic_baseline_location_city_24" />
 
     <EditText
-        android:id="@+id/contactEmail"
+        android:id="@+id/contactDirection"
         android:layout_width="209dp"
         android:layout_height="44dp"
         android:layout_marginStart="12dp"

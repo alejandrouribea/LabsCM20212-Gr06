@@ -32,6 +32,7 @@ class PersonalDataActivity : AppCompatActivity() {
         val datePicker=DatePickerFragment({day,month,year-> onDateSelected(year,month, day)})
         datePicker.show(supportFragmentManager,"datePiker")
     }
+
     private fun onDateSelected(day:Int,month:Int,year: Int){
         findViewById<EditText>(R.id.etDate).setText("$day/$month/$year")
     }
@@ -48,6 +49,7 @@ class PersonalDataActivity : AppCompatActivity() {
             return " "
         }
     }
+
     private fun levelSpinnerOption():String{
         if ((findViewById<Spinner>(R.id.SpinnerLevelEducation) as Spinner).selectedItemPosition==0){
             return " "
@@ -55,11 +57,11 @@ class PersonalDataActivity : AppCompatActivity() {
         else{
             return (findViewById<Spinner>(R.id.SpinnerLevelEducation) as Spinner).selectedItem.toString()
         }
-        return " "
     }
+
     private fun personValidation(){
         var personname=(findViewById<EditText>(R.id.editTextPersonName) as EditText).text.toString()
-        var personlastname=(findViewById<EditText>(R.id.contactEmail) as EditText).text.toString()
+        var personlastname=(findViewById<EditText>(R.id.editTextPersonLastname) as EditText).text.toString()
         var personsexo=radioButtonCheckTrue()
         var personbirth=(findViewById<EditText>(R.id.etDate) as EditText).text.toString()
         var personeducation=levelSpinnerOption()
