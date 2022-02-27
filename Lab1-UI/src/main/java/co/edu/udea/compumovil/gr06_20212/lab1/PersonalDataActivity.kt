@@ -78,15 +78,15 @@ class PersonalDataActivity : AppCompatActivity() {
             (findViewById<EditText>(R.id.textLastNameError)).isVisible = false
             (findViewById<EditText>(R.id.textErroretDate)).isVisible = false
 
-            Log.i("PersonData",personname+"\n"+personlastname+"\n"+personsexo+"\n"+personbirth+"\n"+personeducation)
+            if(personsexo.isEmpty()){
+                Log.i("Personal Data",personname+" "+personlastname+"\n"+personbirth+"\n"+personeducation)
+            }
+            else{
+                Log.i("Personal Data",personname+" "+personlastname+"\n"+personsexo+"\n"+personbirth+"\n"+personeducation)
+            }
 
-            /*println(personname)
-            println(personlastname)
-            println(personsexo)
-            println(personbirth)
-            println(personeducation)*/
 
-            val intent: Intent = Intent(this,ContactDataActivity::class.java)// preguntar al  profe  modificar para que sea como mostro el profe  en clase
+            val intent: Intent = Intent(this,ContactDataActivity::class.java)//modificar para que sea como
             startActivity(intent)//
         }
 
