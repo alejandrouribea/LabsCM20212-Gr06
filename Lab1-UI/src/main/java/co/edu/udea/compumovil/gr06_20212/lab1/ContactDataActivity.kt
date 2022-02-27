@@ -1,7 +1,9 @@
 package co.edu.udea.compumovil.gr06_20212.lab1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
@@ -43,6 +45,9 @@ class ContactDataActivity : AppCompatActivity() {
         var contactPhone=(findViewById<EditText>(R.id.contactPhone) as EditText).text.toString()
         var contactMail=(findViewById<EditText>(R.id.contactMail) as EditText).text.toString()
         var contactCountry=(findViewById<EditText>(R.id.contactCountry) as EditText).text.toString()
+        var contactCity=(findViewById<EditText>(R.id.contactCity) as EditText).text.toString()
+        var contactDirection=(findViewById<EditText>(R.id.contactDirection) as EditText).text.toString()
+
 
         if (contactPhone.isEmpty() || contactMail.isEmpty() || contactCountry.isEmpty()){
             println("error no lleno los  campos")
@@ -62,9 +67,8 @@ class ContactDataActivity : AppCompatActivity() {
 
             (findViewById<EditText>(R.id.textCountryError)).isVisible = false
 
-            println(contactPhone)
-            println(contactMail)
-            println(contactCountry)
+            Log.i("PersonData",contactPhone+"\n"+contactMail+"\n"+contactCountry+"\n"+contactCity+"\n"+contactDirection)
+
         }
 
     }
