@@ -67,7 +67,7 @@ class ContactDataActivity : AppCompatActivity() {
 
             (findViewById<EditText>(R.id.textCountryError)).isVisible = false
 
-            Log.i("PersonData",contactPhone+"\n"+contactMail+"\n"+contactCountry+"\n"+contactCity+"\n"+contactDirection)
+            Log.i("contactData", "Contact information"+"\n"+"Phone"+contactPhone+"\n"+"Mail"+contactMail+"\n"+"Country"+contactCountry+"\n"+"City"+contactCity+"\n"+"Direction"+contactDirection)
 
         }
 
